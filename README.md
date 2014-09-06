@@ -2,7 +2,9 @@ Quick word-embeddings demonstration using [r9y9/nnet](https://github.com/r9y9/nn
 
 [News article from WikiNews](https://en.wikinews.org/wiki/%27Misleading%27_Burger_King_advert_banned_in_the_United_Kingdom) is under a Creative Commons Attribution 2.5 License.
 
-Does it work? Kind of. On the news article, the closest word representations (by Euclidean distance) are television, thickness, and complaints, which - given that the article's about people complaining about the size of a burger featured in a television advert - isn't totally wrong.
+Does it work? Kind of. On the news article, the closest word representations (by Euclidean distance) are television, thickness, and complaints, which - given that the article's about people complaining about the size of a burger featured in a television advert - isn't totally wrong. Your mileage might varybecause it seems quite sensitive to the initialisation of the initial weight-embedding matrix. 
+
+This also requires a patched version of nnet which you can find [here](https://github.com/Sentimentron/nnet/tree/merge).
 
 Todo list:
 * Add support for custom loss functions in `mlp`
