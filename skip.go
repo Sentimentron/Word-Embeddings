@@ -117,7 +117,7 @@ func main() {
 	// Create a randomness source
 	rnd := rand.New(rand.NewSource(8881182))
 	// Read input
-	in, err := ioutil.ReadFile("test.txt")
+	in, err := ioutil.ReadFile("news.txt")
 	if err != nil {
 		panic(err)
 	}
